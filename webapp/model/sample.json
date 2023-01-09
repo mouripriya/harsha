@@ -1,0 +1,50 @@
+{
+	"Sample":[{
+		"Material": "0000000001",
+		"Description": "B1210A-1200*1000 Block Pallet",
+		"Quantity" : "",
+		"Unit of Entry" : "EA",
+        "Store.Loc": "3000",
+        "Batch": "AI",
+        "Movement Type": "261",
+        "Plant": "ES01",
+        "Item": "0010"
+	},
+	{
+		"Material": "0000000001",
+		"Description": "B1210A-1200*1000 Block Pallet",
+		"Quantity" : "",
+		"Unit of Entry" : "EA",
+        "Store.Loc": "3000",
+        "Batch": "AR",
+        "Movement Type": "531",
+        "Plant": "ES01",
+        "Item": "0010"
+	},
+	{
+		"Material": "0000000001",
+		"Description": "B1210A-1200*1000 Block Pallet",
+		"Quantity" : "",
+		"Unit of Entry" : "EA",
+        "Store.Loc": "1000",
+        "Batch": "AW",
+        "Movement Type": "531",
+        "Plant": "ES01",
+        "Item": "0020"
+	},
+    {
+        "Material": "0000000001",
+		"Description": "B1210A-1200*1000 Block Pallet",
+		"Quantity" : "",
+		"Unit of Entry" : "EA",
+        "Store.Loc": "1000",
+        "Batch": "AI",
+        "Movement Type": "531",
+        "Plant": "ES01",
+        "Item": "0030"
+    }
+	
+	
+		
+		]
+}

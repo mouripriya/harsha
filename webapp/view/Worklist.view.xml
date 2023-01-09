@@ -1,0 +1,38 @@
+<mvc:View controllerName="com.sampleproject.controller.Worklist" xmlns="sap.m"  xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic"  xmlns:f="sap.ui.layout.form">
+    <semantic:FullscreenPage id="page"  class="sapUiSizeCompact"   title="Depo Confirmation" >
+        <!-- <semantic:titleHeading>
+            <Title id="t1" text="{i18n>worklistTitle}" level="H4" />
+        </semantic:titleHeading> -->
+
+        <semantic:content>
+            <f:SimpleForm  id="myForm" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="5" labelSpanM="6"
+                            labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="0" columnsL="0" columnsM="0"
+                            singleContainerFullSize="true">
+                <f:content> 
+                					
+                    <Label id="id1"  required="true" text="Production Order"  />
+                    <Input id="myId" valueStateText="Please select Production Order" valueState="{SapContactModel>/PoValueState}" value="{SapContactModel>/ProductionOrder}" change="onListChange" showValueHelp="true"  width="250px" valueHelpRequest="onValueHelpRequested"/>
+
+                    <Label id="id2" required="true" text="Material" />
+                    <Input id="Mate1" valueStateText="Please select Material" valueState="None" value="{SapContactModel>/materialVale}" change="onListChangeMaterial" showValueHelp="true"  width="250px" valueHelpRequest="onValueHelpMaterialRequested"   />
+                    <Label id="id3" required="true" text="Production Plant" />
+                    <Input id="plant"  valueStateText="Please select Production Plant" valueState="None"  value="{SapContactModel>/plantValue}" change="onListChangePlant" showValueHelp="true"  width="250px" valueHelpRequest="onValueHelpPlantRequested"   />
+                    <Label id="id4"  required="true" text="Planning Plant" />
+                    <Input id="planning"  valueStateText="Please Select Planning Plant" valueState="None" value="{SapContactModel>/planningplant}" change="onListChangePlanningPlant" showValueHelp="true"  width="250px" valueHelpRequest="onValueHelpPlanningPlant"   />
+                    <Label id="id5" text=""/>
+                    <Text id="id9" text=""/>
+                    <Label id="id6" text=""/>
+                    <Label id="id7" text=""/>
+                    <Button id="but" text="Execute" press="onExecute" width="200px"/>
+                    
+                </f:content>
+            </f:SimpleForm>
+        </semantic:content>
+        <!-- <Button id="but" text="Execute" press="onExecute"/> -->
+        <!-- <semantic:customFooterContent>
+			<Button id="exportData" press="onExportPress" text="Execute" />
+		</semantic:customFooterContent> -->
+        </semantic:FullscreenPage>
+    <!-- </semantic:SemanticPage> -->
+    
+</mvc:View>

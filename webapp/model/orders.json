@@ -1,0 +1,64 @@
+{
+    "Orders": [
+        {
+            "order": 1000
+        },
+        {
+            "order": 2000
+        },
+        {
+            "order": 3000
+        },
+        {
+            "order": 4000
+        }
+    ],
+    "ProductionOrder":"",
+    "PoValueState": "None",
+    "material": [
+        {
+            "mat": "MM1"
+        },
+        {
+            "mat": "MM2"
+        },
+        {
+            "mat": "MM3"
+        },
+        {
+            "mat": "MM4"
+        }
+    ],
+    "materialVale":"",
+    "plantValue":"",
+    "plant": [
+        {
+            "plant": "Hyderabad"
+        },
+        {
+            "plant": "Bangalore"
+        },
+        {
+            "plant": "Chennai"
+        },
+        {
+            "plant": "Goa"
+        }
+    ],
+    "planningPlant": [
+        {
+            "prodplant": "plant1"
+        },
+        {
+            "prodplant": "plant2"
+        },
+        {
+            "prodplant": "plant3"
+        },
+        {
+            "prodplant": "plant4"
+        }
+    ],
+    "planningplant":""
+
+}

@@ -1,0 +1,133 @@
+<mvc:View controllerName="com.sampleproject.controller.Third" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+    <Page title="Goods" id="pag1" showNavButton="true" navButtonPress="routeBack">
+        
+        <VBox id="Vb1" class="sapUiSmallMargin">
+            <f:SimpleForm
+                id="SimpleFormToolbar"
+                editable="true"
+                layout="ResponsiveGridLayout"
+                labelSpanXL="4"
+                labelSpanL="3"
+                labelSpanM="4"
+                labelSpanS="12"
+                adjustLabelSpan="false"
+                emptySpanXL="0"
+                emptySpanL="4"
+                emptySpanM="0"
+                emptySpanS="0"
+                columnsXL="2"
+                columnsL="2"
+                columnsM="1"
+                singleContainerFullSize="false"
+                ariaLabelledBy="Title1"
+            >
+                <f:content>
+                    <Label id="Lab1" text="Order" />
+                    <Input id="Inp1" value=""  width="150px"/>
+                    <Label id="Lab2" text="Status" />
+                    <Input id="Inp2" value="" width="150px"/>
+
+                    <Label id="Lab3" text="Material Number" />
+                    <Input id="Inp3" value="" width="150px"/>
+                </f:content>
+            </f:SimpleForm>
+        </VBox>
+        <IconTabBar id="Icon1" selectedKey="{viewModel>/kayValue}" expanded="true" expandable="false" select=".onFilterSelect" width="auto">
+            <items>
+                <IconTabFilter id="Bar1" text="Actual Data" key="info">
+                    
+                    <VBox id="Vb11" class="sapUiSmallMargin">
+                        <f:SimpleForm
+                            id="SimpleFormToolbar11"
+                            editable="true"
+                            layout="ResponsiveGridLayout"
+                            labelSpanXL="4"
+                            labelSpanL="3"
+                            labelSpanM="4"
+                            labelSpanS="12"
+                            adjustLabelSpan="false"
+                            emptySpanXL="0"
+                            emptySpanL="4"
+                            emptySpanM="0"
+                            emptySpanS="0"
+                            columnsXL="2"
+                            columnsL="2"
+                            columnsM="1"
+                            singleContainerFullSize="false"
+                            ariaLabelledBy="Title1"
+                        >
+                            <f:content>
+                                <Label id="Lab11" text="Quantity" />
+                                <Input id="Inp11" value="{viewModel>/Quantity}" width="150px"/>
+                                <Label id="Lab21" text="Reason for Var" />
+                                <Input id="Inp21" value="{viewModel>/ReasonforVar}"  width="150px"/>
+
+                                
+                            </f:content>
+                        </f:SimpleForm>
+                    </VBox>
+                </IconTabFilter>
+                <IconTabFilter id="Bar2" text="Goods Movements Overview" key="info1">
+                    <Table id="idProductsTable"  inset="false" items="{oTableModel>/Sample}" class="sapFSemanticPageAlignContent" width="auto">
+                        <columns>
+                            <Column id="id1">
+                                <Text id="t1" text="Material" />
+                            </Column>
+                            <Column id="id2" minScreenWidth="Tablet" demandPopin="true">
+                                <Text id="t2" text="Description" />
+                            </Column>
+                            <Column id="id3" minScreenWidth="Tablet" demandPopin="true">
+                                <Text id="t3" text="Quantity" />
+                            </Column>
+                            <Column id="id4" minScreenWidth="Tablet" demandPopin="true">
+                                <Text id="t4" text="Unit of Entry" />
+                            </Column>
+                            <Column id="id5" minScreenWidth="Tablet" demandPopin="true">
+                                <Text id="t5" text="Store.Loc" />
+                            </Column>
+                            <Column id="id6" minScreenWidth="Tablet" demandPopin="true">
+                                <Text id="t6" text="Batch" />
+                            </Column>
+                            <Column id="id7" minScreenWidth="Tablet" demandPopin="true">
+                                <Text id="t7" text="Movement Type" />
+                            </Column>
+                            <Column id="id8" minScreenWidth="Tablet" demandPopin="true">
+                                <Text id="t8" text="Plant" />
+                            </Column>
+                            <Column id="id9" minScreenWidth="Tablet" demandPopin="true">
+                                <Text id="t9" text="Plant" />
+                            </Column>
+                            
+                        </columns>
+
+                        <items>
+                            <ColumnListItem id="c" vAlign="Middle">
+                                <cells>
+                                    <Text id="c1" text="{oTableModel>Material}" />
+
+                                    <Text id="c2" text="{oTableModel>Description}" />
+                                    <Input id="c3" value="{oTableModel>Quantity}" />
+                                    <Text id="c4" text="{oTableModel>Unit of Entry}" />
+                                    <Text id="c5" text="{oTableModel>Store.Loc}" />
+                                    <Text id="c6" text="{oTableModel>Batch}" />
+                                    <Text id="c7" text="{oTableModel>Movement Type}" />
+                                     <Text id="c8" text="{oTableModel>Plant}" />
+                                      <Text id="c9" text="{oTableModel>Item}" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
+        <!-- </VBox> -->
+        <!-- </content> -->
+        <footer>
+			<OverflowToolbar id="Ovr1">
+				<ToolbarSpacer/>
+				<Button  id="But1" type="Submit" press="onSubmit" text="Submit"/>
+				
+			</OverflowToolbar>
+		</footer>
+    </Page>
+</mvc:View>

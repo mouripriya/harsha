@@ -1,0 +1,62 @@
+<mvc:View controllerName="com.sampleproject.controller.Details" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:layout="sap.ui.layout">
+    <semantic:FullscreenPage id="page1" class="sapUiSizeCompact" title="Details ">
+        <!-- <semantic:HeaderContent>
+            <Button id="conf" text="Confirmation" press="onConfirmation" />
+
+            <Button id="cancel" text="Cancellation" press="onCancellation" />
+            <Button id="Disp" text="Display" press="onDisplay" />
+        </semantic:HeaderContent> -->
+        
+        <semantic:content>
+        <OverflowToolbar design="Auto" id="__toolbar0" width="100%">
+        	<content> 
+            <Button id="conf" text="Confirmation" press="onConfirmation"  type="Emphasized"/>
+
+            <Button id="cancel" text="Cancellation" press="onCancellation"  type="Emphasized"/>
+            <Button id="Disp" text="Display" press="onDisplay"  type="Emphasized"/>
+            </content>
+        </OverflowToolbar>
+        
+            <Table id="idProductsTable"  mode="SingleSelectLeft" inset="false" items="{path: 'SapDetailModel>/Sample'}" class="sapFSemanticPageAlignContent" width="auto">
+                <columns>
+                    <Column id="id1">
+                        <Text id="t1" text="Order" />
+                    </Column>
+                    <Column  id="id2" minScreenWidth="Tablet" demandPopin="true">
+                        <Text  id="t2" text="Material" />
+                    </Column>
+                    <Column  id="id3" minScreenWidth="Tablet" demandPopin="true">
+                        <Text id="t3" text="Material Description" />
+                    </Column>
+                    <Column  id="id4" minScreenWidth="Tablet" demandPopin="true">
+                        <Text  id="t4" text="Order Type " />
+                    </Column>
+                    <Column  id="id5" minScreenWidth="Tablet" demandPopin="true">
+                        <Text id="t5" text="WorkCenter/Description" />
+                    </Column>
+                    <Column id="id6" minScreenWidth="Tablet" demandPopin="true">
+                        <Text id="t6" text="Basicstartdate" />
+                    </Column>
+                    <Column  id="id7" minScreenWidth="Tablet" demandPopin="true">
+                        <Text  id="t7" text="Priority" />
+                    </Column>
+                </columns>
+
+                <items>
+                    <ColumnListItem  id="c" vAlign="Middle">
+                        <cells>
+                            <Text id="c1" text= "{SapDetailModel>Order}" />
+                            
+                            <Text  id="c2" text= "{SapDetailModel>Material}"/>
+                            <Text id="c3" text= "{SapDetailModel>Material Description}"/>
+                            <Text  id="c4" text=  "{SapDetailModel>OrderType}"/>
+                            <Text  id="c5" text= "{SapDetailModel>WorkCenter/Description}"/>
+                            <Text  id="c6" text= "{SapDetailModel>Basicstartdate}" />
+                            <Text  id="c7" text= "{SapDetailModel>Priority}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </semantic:content>
+    </semantic:FullscreenPage>
+</mvc:View>

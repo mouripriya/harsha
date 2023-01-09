@@ -1,0 +1,21 @@
+<core:FragmentDefinition
+xmlns="sap.m"
+xmlns:core="sap.ui.core" >
+<SelectDialog
+title="Materials"
+class="sapUiPopupWithPadding"
+items="{ path: 'SapContactModel>/material' }"
+search="handleValueHelpSearchMaterial"
+
+confirm="onListChangeMaterial"
+cancel="_handleValueHelpClose1">
+<StandardListItem
+icon="{ProductPicUrl}"
+iconDensityAware="false"
+id="selectItems2"
+title="{SapContactModel>mat}"
+
+ />
+</SelectDialog>
+
+</core:FragmentDefinition>

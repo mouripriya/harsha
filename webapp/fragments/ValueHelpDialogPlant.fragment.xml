@@ -1,0 +1,20 @@
+<core:FragmentDefinition
+xmlns="sap.m"
+xmlns:core="sap.ui.core">
+<SelectDialog
+title="Production Plant"
+class="sapUiPopupWithPadding"
+items="{ path: 'SapContactModel>/plant' }"
+search="handleValueHelpSearchPlant"
+
+confirm="onListChangePlant"
+cancel="_handleValueHelpClose2">
+<StandardListItem
+icon="{ProductPicUrl}"
+iconDensityAware="false"
+id="selectItems4"
+title="{SapContactModel>plant}"
+ />
+</SelectDialog>
+
+</core:FragmentDefinition>
